@@ -1,0 +1,38 @@
+/*==education==*/
+
+.education {
+    .single-education {
+      padding: 15px;
+      border: 1px solid var(--white);
+      margin: 18px 0;
+    }
+  
+    span {
+      display: block;
+    }
+  
+    .year {
+      font-size: 24px;
+      color: var(--white);
+      @include media-breakpoint-down(sm){
+        font-size: 22px;
+      }
+    }
+  
+    .title {
+      font-size: 24px;
+      text-transform: capitalize;
+      font-weight: bold;
+      color: var(--white);
+      @include media-breakpoint-down(sm){
+        font-size: 22px;
+      }
+    }
+  
+    .uni {
+      font-size: 16px;
+      text-transform: capitalize;
+      color: var(--white);
+    }
+  }
+  

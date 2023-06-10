@@ -1,0 +1,65 @@
+/*===================home5====================*/
+
+.home5 {
+  h1 {
+    color: var(--h-color);
+    font-size: 4vmax;
+    font-weight: 700;
+    @include media-breakpoint-only(lg){
+      font-size: 52px;
+      margin: 10px 0;
+    }
+    @include media-breakpoint-between(sm, lg){
+      font-size: 42px;
+      margin: 10px 0;
+    }
+    @include media-breakpoint-down(sm){
+      font-size: 36px;
+      margin: 10px 0;
+    }
+  }
+
+  .home-details {
+    text-align: center;
+
+    img {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      border: 10px solid var(--dark);
+      @include media-breakpoint-down(sm){
+        width: 170px;
+        height: 170px;
+      }
+    }
+  }
+
+  ul li {
+    display: inline-block;
+    list-style: none;
+
+    a {
+      width: 40px;
+      height: 40px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 2px solid var(--white);
+      border-radius: 50%;
+      color: var(--white);
+      padding: 8px;
+      margin: 2px;
+      transition: 0.3s;
+      @include media-breakpoint-down(sm){
+        width: 35px;
+        height: 35px;
+      }
+
+      &:hover {
+        background: var(--white);
+        border: 2px solid var(--dark);
+        color: var(--bg-color);
+      }
+    }
+  }
+}

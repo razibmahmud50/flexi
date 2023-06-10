@@ -1,0 +1,21 @@
+{
+  "name": "flexi",
+  "version": "1.0.0",
+  "description": "flexi html template",
+  "main": "index.html",
+  "directories": {
+    "lib": "lib"
+  },
+  "scripts": {
+    "start": "index.html",
+    "sass": "sass --watch assets/styles/scss/style.scss:assets/styles/style.css"
+  },
+  "author": "Razib hossain",
+  "license": "ISC",
+  "dependencies": {
+    "bootstrap": "^5.3.0"
+  },
+  "devDependencies": {
+    "sass": "^1.63.3"
+  }
+}

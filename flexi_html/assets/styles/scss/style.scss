@@ -1,0 +1,30 @@
+//vendors
+@import "../../../node_modules/bootstrap/scss/bootstrap";
+
+//global 
+@import 'base/variables';
+@import 'base/global';
+
+//animations
+@import 'base/animations';
+
+//components
+@import 'components/buttons';
+@import 'components/forms';
+
+
+//layout
+@import 'layout/header';
+@import 'layout/footer';
+//pages
+@import 'pages/generic';
+@import 'pages/home';
+@import 'pages/about';
+@import 'pages/testimonial';
+@import 'pages/resume';
+@import 'pages/education';
+@import 'pages/experience';
+@import 'pages/portfolio';
+@import 'pages/contact';
+
+

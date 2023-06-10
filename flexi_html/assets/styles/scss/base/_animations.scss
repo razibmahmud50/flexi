@@ -1,0 +1,17 @@
+/*==animition==*/
+@-webkit-keyframes ani-one {
+    0% {
+      opacity: 1;
+      -webkit-transform: scale(1);
+      transform: scale(1);
+    }
+    80% {
+      -webkit-transform: scale(1.6);
+      transform: scale(1.6);
+    }
+    100% {
+      opacity: 0;
+      -webkit-transform: scale(1.6);
+      transform: scale(1.6);
+    }
+  }

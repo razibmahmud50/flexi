@@ -1,0 +1,90 @@
+/*
+Theme Name: 
+Theme URI: 
+Author: theme bazar
+Author URI: https://www.themebazar.com
+Version: 1.0
+Tags: responsive,html5,css3,bootstrap,jquery
+Description: Responsive bootstrap html template
+*/
+/*==Index==
+***1: variables
+***2: global-style
+***3: general-style
+***4: top-menu
+***5: overlay-menu
+***6: home5
+***7: about
+***8: Resume
+***9: portfolio5
+***10:contact
+***12:footer
+***13:responsive
+***14:color-change
+*/
+
+  /*==Global-Style==*/
+  body{
+    width: 100%;
+    min-height: 100vh;
+    font-family: var(--body-font-family);
+    background-color: var(--bg-color);
+    color: var(--white);
+  }
+  h1,h2,h3,h4,h5,h6{
+    font-family: var(--h-font-family);
+    font-weight: bold;
+    color: var(--h-color);
+  }
+  h2{
+    font-size:2rem;
+    font-weight:700;
+    text-align: left;
+    text-transform: capitalize;
+    margin-top:20px;
+    @include media-breakpoint-down(sm){
+      font-size: 24px;
+    }
+  }
+  p{
+    color: var(--white);
+    font-size: 16px;
+    margin-bottom: 0;
+  }
+  a{
+    text-decoration: none;
+    color: #5d93d8;
+    color: var(--sec-color);
+    outline: none;
+  }
+  a:hover,
+  a:focus {
+    text-decoration: none; 
+    color: #423c2b;
+    color: var(--pri-color);
+    outline: none;
+  }
+  img{
+    max-width: 100%;
+  }
+  ul{
+    list-style: none;
+    margin-bottom: 0;
+    padding-left: 0;
+  }
+  main {
+    position: relative;
+  }
+  section{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 120px 0;
+  }
+  button:focus{
+    outline: none;
+  }
+  :focus{
+    box-shadow: none!important;
+  }

@@ -1,0 +1,206 @@
+/*==General-Style==*/
+
+.pad {
+  padding: 60px 0;
+}
+
+.row-pad {
+  margin-top: 60px;
+}
+
+.line-img {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 25px;
+}
+
+/*==preloader css==*/
+
+.no-js #loader {
+  display: none;
+}
+
+.js #loader {
+  display: block;
+  position: absolute;
+  left: 100px;
+  top: 0;
+}
+
+.se-pre-con {
+  position: fixed;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background: url(img/Preloader.gif) center no-repeat #fff;
+}
+
+
+/*for theme color changing css*/
+
+a.lm-demo-panel-switcher {
+  position: fixed;
+  background-color: #fff;
+  font-size: 18px;
+  line-height: 1em;
+  text-decoration: none;
+  padding: 10px 12px;
+  top: 120px;
+  border: 1px solid #d5d5d5;
+  z-index: 100;
+  outline: 0;
+  cursor: pointer;
+  -webkit-transition: all 0.2s linear;
+  -moz-transition: all 0.2s linear;
+  -o-transition: all 0.2s linear;
+  transition: all 0.2s linear;
+  -webkit-transform: translateZ(0);
+  -moz-transform: translateZ(0);
+  -ms-transform: translateZ(0);
+  -o-transform: translateZ(0);
+  transform: translateZ(0);
+
+  i {
+    color: #222;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+
+  &:hover i {
+    -webkit-transform: rotate(360deg);
+    -moz-transform: rotate(360deg);
+    transform: rotate(360deg);
+  }
+
+  &.left {
+    left: 0;
+    border-left: 0;
+    border-top-right-radius: 2px;
+    -moz-border-radius-topright: 2px;
+    -webkit-border-top-right-radius: 2px;
+    -moz-border-radius-bottomright: 2px;
+    -webkit-border-bottom-right-radius: 2px;
+    border-bottom-right-radius: 2px;
+  }
+
+  &.right {
+    right: 0;
+    border-right: 0;
+    border-bottom-left-radius: 2px;
+    border-top-left-radius: 2px;
+    -moz-border-radius-bottomleft: 2px;
+    -moz-border-radius-topleft: 2px;
+    -webkit-border-bottom-left-radius: 2px;
+    -webkit-border-top-left-radius: 2px;
+  }
+}
+
+.lm-demo-panel {
+  display: block;
+  position: fixed;
+  top: 168px;
+  max-height: calc(100% - 168px);
+  overflow: auto;
+  opacity: 0;
+  visibility: hidden;
+  background: #fff;
+  width: 160px;
+  height: auto;
+  z-index: 1999;
+  padding: 15px 15px 20px;
+  border: 1px solid #d5d5d5;
+  -webkit-box-shadow: 0 1px 12px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 1px 12px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 1px 12px rgba(0, 0, 0, 0.1);
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+
+  &.left {
+    left: 0;
+    margin-left: -160px;
+    border-left: 0;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+
+  &.right {
+    right: 0;
+    margin-right: -160px;
+    border-right: 0;
+  }
+
+  &.left.active, &.right.active {
+    margin-left: 0;
+    margin-right: 0;
+    opacity: 1;
+    visibility: visible;
+    -webkit-transition: all 0.3s ease-in-out;
+    -moz-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+  }
+
+  .demo-panel-title {
+    display: block;
+    font-size: 16px;
+    text-align: center;
+    color: inherit;
+    margin-bottom: 7px;
+    color: #171619;
+  }
+}
+
+/* demo option */
+
+.demo-panel-options {
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 7px;
+
+  a {
+    cursor: pointer;
+  }
+}
+
+.lm-demo-panel {
+  .preview {
+    position: relative;
+    float: left;
+    width: 29%;
+    height: 29%;
+    margin: 2%;
+    padding: 1px;
+
+    &.w-border {
+      outline: 1px solid #e5e5e5;
+      outline-offset: -1px;
+    }
+  }
+
+  .t-style {
+    width: 46%;
+    height: 34px;
+    line-height: 34px;
+    font-size: 13px;
+    color: #666;
+    text-align: center;
+  }
+}
+
+.preview {
+  &.t-style-light {
+    background-color: #fff;
+  }
+
+  &.t-style-dark {
+    background-color: #222;
+    color: #fff;
+  }
+}

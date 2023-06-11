@@ -11977,7 +11977,7 @@ button:focus {
 }
 
 /*==animition==*/
-@-webkit-keyframes ani-one {
+@keyframes ani-one {
   0% {
     opacity: 1;
     -webkit-transform: scale(1);

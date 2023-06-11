@@ -87,29 +87,5 @@
       position: relative;
       color: var(--white);
     }
-
-    .location::before {
-      font-family: "Font Awesome 5 Free";
-      content: "\f1d8";
-      font-weight: bold;
-      margin-right: 15px;
-      font-size: 24px;
-    }
-
-    .phone::before {
-      font-family: "Font Awesome 5 Free";
-      content: "\f095";
-      font-weight: bold;
-      margin-right: 15px;
-      font-size: 24px;
-    }
-
-    .email::before {
-      font-family: "Font Awesome 5 Free";
-      content: "\f0e0";
-      font-weight: bold;
-      margin-right: 15px;
-      font-size: 24px;
-    }
   }
 }

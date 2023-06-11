@@ -39,21 +39,13 @@
     list-style: none;
 
     a {
-      width: 40px;
-      height: 40px;
       display: flex;
       justify-content: center;
       align-items: center;
-      border: 2px solid var(--white);
       border-radius: 50%;
       color: var(--white);
-      padding: 8px;
       margin: 2px;
       transition: 0.3s;
-      @include media-breakpoint-down(sm){
-        width: 35px;
-        height: 35px;
-      }
 
       &:hover {
         background: var(--white);

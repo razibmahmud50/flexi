@@ -12406,23 +12406,13 @@ a.lm-demo-panel-switcher.right {
   list-style: none;
 }
 .home5 ul li a {
-  width: 40px;
-  height: 40px;
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 2px solid var(--white);
   border-radius: 50%;
   color: var(--white);
-  padding: 8px;
   margin: 2px;
   transition: 0.3s;
-}
-@media (max-width: 575.98px) {
-  .home5 ul li a {
-    width: 35px;
-    height: 35px;
-  }
 }
 .home5 ul li a:hover {
   background: var(--white);
@@ -13155,27 +13145,6 @@ a.lm-demo-panel-switcher.right {
   display: flex;
   position: relative;
   color: var(--white);
-}
-.contact .single-info .location::before {
-  font-family: "Font Awesome 5 Free";
-  content: "\f1d8";
-  font-weight: bold;
-  margin-right: 15px;
-  font-size: 24px;
-}
-.contact .single-info .phone::before {
-  font-family: "Font Awesome 5 Free";
-  content: "\f095";
-  font-weight: bold;
-  margin-right: 15px;
-  font-size: 24px;
-}
-.contact .single-info .email::before {
-  font-family: "Font Awesome 5 Free";
-  content: "\f0e0";
-  font-weight: bold;
-  margin-right: 15px;
-  font-size: 24px;
 }
 
 /*# sourceMappingURL=style.css.map */

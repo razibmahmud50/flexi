@@ -1,40 +1,13 @@
-/*===============contact==================*/
-
 .contact {
   flex-direction: column;
   padding: 100px 0;
-  @include media-breakpoint-down(sm){
+
+  @include media-breakpoint-down(sm) {
     padding: 140px 0 60px;
   }
 
   .contact-title {
     margin: 20px 0;
-  }
-  .contact-info{
-    @include media-breakpoint-down(md){
-      margin-top: 50px;
-    }
-  }
-
-  .contact-form .form-control:focus {
-    color: #495057;
-    border-color: transparent;
-    outline: 0;
-    box-shadow: 0 0 0 0.2rem transparent;
-    border-bottom: 2px solid var(--white);
-  }
-
-  .line {
-    margin-bottom: 25px;
-  }
-
-  .address {
-    font-size: 14px;
-    line-height: 29px;
-    color: var(--gray);
-    padding: 15px 0;
-    display: block;
-    line-height: 1.4;
   }
 
   .contact-form {
@@ -52,6 +25,14 @@
       border-right: none;
       border-bottom: 1px solid var(--white);
       border-radius: 0;
+
+      &:focus {
+        color: #495057;
+        border-color: transparent;
+        outline: 0;
+        box-shadow: 0 0 0 0.2rem transparent;
+        border-bottom: 2px solid var(--white);
+      }
     }
 
     textarea {
@@ -77,15 +58,21 @@
     }
   }
 
-  .single-info {
-    padding: 15px;
-    border: 1px solid var(--white);
-    margin: 15px 0;
+  .contact-info {
+    @include media-breakpoint-down(md) {
+      margin-top: 50px;
+    }
 
-    span {
-      display: flex;
-      position: relative;
-      color: var(--white);
+    .single-info {
+      padding: 15px;
+      border: 1px solid var(--white);
+      margin: 15px 0;
+
+      span {
+        display: flex;
+        position: relative;
+        color: var(--white);
+      }
     }
   }
 }

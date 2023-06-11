@@ -1,57 +1,62 @@
-/*===================home5====================*/
-
-.home5 {
-  h1 {
-    color: var(--h-color);
-    font-size: 4vmax;
-    font-weight: 700;
-    @include media-breakpoint-only(lg){
-      font-size: 52px;
-      margin: 10px 0;
-    }
-    @include media-breakpoint-between(sm, lg){
-      font-size: 42px;
-      margin: 10px 0;
-    }
-    @include media-breakpoint-down(sm){
-      font-size: 36px;
-      margin: 10px 0;
-    }
-  }
-
+.home {
   .home-details {
     text-align: center;
+
+    h1 {
+      color: var(--h-color);
+      font-size: 4vmax;
+      font-weight: 700;
+
+      @include media-breakpoint-only(lg) {
+        font-size: 52px;
+        margin: 10px 0;
+      }
+
+      @include media-breakpoint-between(sm, lg) {
+        font-size: 42px;
+        margin: 10px 0;
+      }
+
+      @include media-breakpoint-down(sm) {
+        font-size: 36px;
+        margin: 10px 0;
+      }
+    }
 
     img {
       width: 200px;
       height: 200px;
       border-radius: 50%;
       border: 10px solid var(--dark);
-      @include media-breakpoint-down(sm){
+
+      @include media-breakpoint-down(sm) {
         width: 170px;
         height: 170px;
       }
     }
-  }
 
-  ul li {
-    display: inline-block;
-    list-style: none;
+    ul {
+      li {
+        display: inline-block;
+        list-style: none;
 
-    a {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      border-radius: 50%;
-      color: var(--white);
-      margin: 2px;
-      transition: 0.3s;
+        a {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 50%;
+          color: var(--white);
+          margin: 2px;
+          transition: 0.3s;
 
-      &:hover {
-        background: var(--white);
-        border: 2px solid var(--dark);
-        color: var(--bg-color);
+          &:hover {
+            background: var(--white);
+            border: 2px solid var(--dark);
+            color: var(--bg-color);
+          }
+        }
       }
+
     }
   }
 }
